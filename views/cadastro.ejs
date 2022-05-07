@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('./partials/header.ejs') %>
+    <main>
+       <section id="cadastro">
+        <form method="post" action="/cadastro">
+            <fieldset id="fieldPrincipal">
+            <h2>Cadastrar Filme</h2>
+            <fieldset>
+                <input type="text" id="nome" name="nome" required>
+                <label for="nome"> Nome </label>
+            </fieldset>
+
+            <fieldset>
+                <input type="text" id="diretor" name="diretor" required>
+                <label for="diretor"> Diretor </label>
+            </fieldset>
+
+            <fieldset>
+                <input type="url" id="imagem" name="imagem" required>
+                <label for="imagem"> Imagem </label>
+            </fieldset>
+
+            <fieldset>
+                <input type="number" id="ano" name="ano" required>
+                <label for="ano"> Ano </label>
+            </fieldset>
+
+            <fieldset>
+                <input type="text" id="sinopse" name="sinopse" required>
+                <label for="sinopse"> Sinopse </label>
+            </fieldset>
+
+            <button id="button" type="submit">Registrar</button>
+
+            </fieldset>
+            
+        </form>
+
+       </section>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>

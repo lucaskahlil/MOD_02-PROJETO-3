@@ -1,0 +1,194 @@
+@font-face {font-family: "Stay and Shine"; src: url("//db.onlinewebfonts.com/t/9f21717880eddcfa3f9b9af87ccdb83f.eot"); src: url("//db.onlinewebfonts.com/t/9f21717880eddcfa3f9b9af87ccdb83f.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9f21717880eddcfa3f9b9af87ccdb83f.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9f21717880eddcfa3f9b9af87ccdb83f.woff") format("woff"), url("//db.onlinewebfonts.com/t/9f21717880eddcfa3f9b9af87ccdb83f.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9f21717880eddcfa3f9b9af87ccdb83f.svg#Stay and Shine") format("svg"); }
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Stay and Shine;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    background-color: black;
+    color: white;
+}
+header {
+    display: flex;
+    height: 10%;
+    background-color: gray;
+}
+
+header nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    max-height: fit-content;
+    width: fit-content;
+}
+
+header nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+main {
+    min-height: 80%
+}
+
+section article.card {
+    height: 600px;
+    width: 400px;
+}
+
+article.card div.cardImagem {
+    height: 90%;
+}
+
+article.card div.cardNome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
+}
+
+section#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 20px;
+    gap: 2rem;
+}
+
+article.card div.cardImagem img {
+    height: 100%;
+    width: 100%;
+}
+
+section#DetalheContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+section article.cardDetalhes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 1080px;
+}
+
+article.cardDetalhes div.imgDetalhes {
+    height: 100%;
+    width: 40%;
+}
+
+article.cardDetalhes div.infDetalhes {
+    height: 100%;
+    width: 60%;
+}
+
+article.cardDetalhes div.imgDetalhes img {
+    height: 100%;
+    width: 100%;
+}
+
+article.cardDetalhes div.infDetalhes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+article.cardDetalhes div.infDetalhes p.descricao {
+    margin: 20px;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 100%;
+    width: 50%;
+}
+
+form fieldset fieldset{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 0 10px 0 10px;
+    gap: 5px;
+    border: none;
+    width: 100%;
+}
+
+label {
+    width: 98%;
+    text-align: left;
+    font-size: 2rem;
+}
+
+h2 {
+    width: 98%;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+form fieldset#fieldPrincipal {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+input {
+    height: 2rem;
+    width: 98%;
+    box-shadow: 0 0 1em black;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+#button {
+    color: gray;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding: 3px;
+    background-color: white;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+#button:hover {
+    color: black;
+    background-color: gray;
+}
+
+footer {
+    height: 10%;
+    background-color: gray;
+}

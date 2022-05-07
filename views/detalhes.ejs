@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('./partials/header.ejs') %>
+    <main>
+        <section id="DetalheContainer">
+            <article class="cardDetalhes">
+                <div class="imgDetalhes">
+                    <img src="<%= filmesDetalhes.imagem %>" alt="">
+                </div>
+
+                <div class="infDetalhes">
+                    <h1 id="tituloDetalhes"> <%= filmesDetalhes.nome %> </h1>
+                    <p class="descricao">Diretor: <%= filmesDetalhes.diretor %> </p>
+                    <p class="descricao">Ano: <%= filmesDetalhes.ano %></p>
+                    <p class="descricao">Sinopse: <%= filmesDetalhes.sinopse %> </p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>
