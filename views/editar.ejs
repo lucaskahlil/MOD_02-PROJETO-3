@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
 </head>
@@ -12,35 +11,35 @@
     <%- include('./partials/header.ejs') %>
     <main>
        <section id="cadastro">
-        <form method="post" action="/cadastro">
+        <form method="post" action="/editar/<%= filmeAtual.id %>">
             <fieldset id="fieldPrincipal">
-            <h2>Cadastrar Filme</h2>
+            <h2>Editar Filme</h2>
             <fieldset>
-                <input type="text" name="nome" required>
+                <input type="text" name="nome" required value="<%= filmeAtual.nome %>">
                 <label for="nome"> Nome </label>
             </fieldset>
 
             <fieldset>
-                <input type="text" name="diretor" required>
+                <input type="text" name="diretor" required value="<%= filmeAtual.diretor %>">
                 <label for="diretor"> Diretor </label>
             </fieldset>
 
             <fieldset>
-                <input type="url" name="imagem" required>
+                <input type="url" name="imagem" required value="<%= filmeAtual.imagem %>">
                 <label for="imagem"> Imagem </label>
             </fieldset>
 
             <fieldset>
-                <input type="number" name="ano" required>
+                <input type="number" name="ano" required value="<%= filmeAtual.ano %>">
                 <label for="ano"> Ano </label>
             </fieldset>
 
             <fieldset>
-                <input type="text" name="sinopse" required>
+                <input type="text" name="sinopse" required value="<%= filmeAtual.sinopse %>">
                 <label for="sinopse"> Sinopse </label>
             </fieldset>
 
-            <button id="button" type="submit">Registrar</button>
+            <button id="button" type="submit">Confirmar Edição</button>
 
             </fieldset>
             
@@ -49,16 +48,5 @@
        </section>
     </main>
     <%- include('./partials/footer.ejs') %>
-    <% if (toggle) { %>
-        <script>
-            Swal.fire({
-            icon: 'success',
-            title: 'Sucesso!!!',
-            text: 'Seu filme foi cadastrado!',
-            timer: 5000
-              })
-              setInterval(() => {window.location.href = "/"}, 5000)
-            </script>
-    <% } %>
 </body>
 </html>

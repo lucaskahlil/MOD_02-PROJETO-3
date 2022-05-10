@@ -6,6 +6,10 @@
     font-family: Stay and Shine;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     height: 100vh;
     width: 100vw;
@@ -42,6 +46,12 @@ header nav ul {
 
 main {
     min-height: 80%
+}
+
+div.btn_container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 section article.card {
@@ -119,12 +129,17 @@ article.cardDetalhes div.infDetalhes p.descricao {
     margin: 20px;
 }
 
+main section#cadastro {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
 
-
-form {
+section#cadastro form {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    padding: 20px;
     height: 100%;
     width: 50%;
 }
@@ -157,8 +172,8 @@ h2 {
 form fieldset#fieldPrincipal {
     border: none;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     align-content: center;
     align-items: center;
     width: 100%;
@@ -191,4 +206,11 @@ input {
 footer {
     height: 10%;
     background-color: gray;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
+
