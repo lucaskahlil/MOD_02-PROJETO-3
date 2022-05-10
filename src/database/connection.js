@@ -12,5 +12,14 @@ export const connection = new sequelize(
     //     port: 5432,
     //     dialect: 'postgres'
     // }
-    process.env.DB_URL
-)
+    `postgres://filmes_7b1y_user:gEqPLDxh5B3Y0tzZBtcFb29JfxtaZAGR@dpg-c9ss4sj19n07ml7tfnn0-a/filmes_7b1y`,
+
+ {
+
+dialect: 'postgres',
+dialectOptions: {
+  ssl: {
+    rejectUnauthorized: false,
+    require: true
+}
+}})
